@@ -1,6 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/app';
+import './assets/css/bootstrap.min.css';
+import './assets/css/owl.carousel.min.css';
+import './assets/css/responsive.css';
+// assets
+import './assets/css/style.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
