@@ -1,3 +1,4 @@
+import { Link } from '@reach/router';
 import React from 'react';
 import logo from '../../assets/images/logo.png';
 
@@ -7,9 +8,9 @@ const Navbar = () => (
             <div className="row">
                 <div className="col-md-3">
                     <div className="full">
-                        <a className="logo" href="/">
+                        <Link to="/" className="logo">
                             <img src={logo} alt="#" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="col-md-9">
@@ -26,7 +27,7 @@ const Navbar = () => (
                                                     src={phoneIcon}
                                                     alt="#"
                                                 /> */}
-                                    <a href="/">Home</a>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li className="dinone">
                                     {/* <img
@@ -34,7 +35,7 @@ const Navbar = () => (
                                                     src={mailIcon}
                                                     alt="#"
                                                 /> */}
-                                    <a href="/">About</a>
+                                    <Link to="/about">About</Link>
                                 </li>
                                 <li className="dinone">
                                     {/* <img
@@ -47,7 +48,7 @@ const Navbar = () => (
                                                     src={locationIcon}
                                                     alt="#"
                                                 /> */}
-                                    <a href="/"> Recipe </a>
+                                    <Link to="/recipe"> Recipe </Link>
                                 </li>
                                 <li className="dinone">
                                     {/* <img
@@ -60,7 +61,7 @@ const Navbar = () => (
                                                     src={locationIcon}
                                                     alt="#"
                                                 /> */}
-                                    <a href="/"> Blog </a>
+                                    <Link to="/blog"> Blog </Link>
                                 </li>
                                 <li className="dinone">
                                     {/* <img
@@ -73,15 +74,15 @@ const Navbar = () => (
                                                     src={locationIcon}
                                                     alt="#"
                                                 /> */}
-                                    <a href="/"> Contact </a>
+                                    <Link to="/contact"> Contact </Link>
                                 </li>
                                 <li className="button_user">
-                                    <a className="button active" href="/">
+                                    <Link to="/loging" className="button active">
                                         Login
-                                    </a>
-                                    <a className="button" href="/">
+                                    </Link>
+                                    <Link to="/register" className="button">
                                         Register
-                                    </a>
+                                    </Link>
                                 </li>
                                 {/* <li>
                                                 <img
